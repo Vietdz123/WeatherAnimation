@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04A3DB682AF22F8000C11F86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DB672AF22F8000C11F86 /* AppDelegate.swift */; };
+		04A3DB6A2AF22F8000C11F86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DB692AF22F8000C11F86 /* SceneDelegate.swift */; };
+		04A3DB6C2AF22F8000C11F86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DB6B2AF22F8000C11F86 /* ViewController.swift */; };
+		04A3DB712AF22F8200C11F86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A3DB702AF22F8200C11F86 /* Assets.xcassets */; };
+		04A3DB742AF22F8200C11F86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A3DB722AF22F8200C11F86 /* LaunchScreen.storyboard */; };
+		04A3DB802AF230DD00C11F86 /* BoardCaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DB7F2AF230DD00C11F86 /* BoardCaseController.swift */; };
+		04A3DB922AF2319800C11F86 /* DeviceSetupChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DB872AF2318A00C11F86 /* DeviceSetupChannel.swift */; };
+		04A3DB932AF2319800C11F86 /* Channelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DB882AF2318C00C11F86 /* Channelable.swift */; };
+		04A3DB942AF2319800C11F86 /* DeviceDiscoveryChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DB892AF2318E00C11F86 /* DeviceDiscoveryChannel.swift */; };
+		04A3DB952AF2319800C11F86 /* DeviceAuthChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DB8A2AF2318F00C11F86 /* DeviceAuthChannel.swift */; };
+		04A3DB962AF2319800C11F86 /* DeviceConnectionChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DB8B2AF2319000C11F86 /* DeviceConnectionChannel.swift */; };
+		04A3DB972AF2319800C11F86 /* MultizoneControlChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DB8C2AF2319200C11F86 /* MultizoneControlChannel.swift */; };
+		04A3DB982AF2319800C11F86 /* HeartbeatChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DB8D2AF2319300C11F86 /* HeartbeatChannel.swift */; };
+		04A3DB992AF2319800C11F86 /* RequestSink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DB8E2AF2319400C11F86 /* RequestSink.swift */; };
+		04A3DB9A2AF2319800C11F86 /* ReceiverControlChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DB8F2AF2319500C11F86 /* ReceiverControlChannel.swift */; };
+		04A3DB9B2AF2319800C11F86 /* CastChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DB902AF2319700C11F86 /* CastChannel.swift */; };
+		04A3DB9C2AF2319800C11F86 /* MediaControlChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DB912AF2319800C11F86 /* MediaControlChannel.swift */; };
+		04A3DB9F2AF2319E00C11F86 /* CastDeviceScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DB9D2AF2319C00C11F86 /* CastDeviceScanner.swift */; };
+		04A3DBA02AF2319E00C11F86 /* CastClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DB9E2AF2319E00C11F86 /* CastClient.swift */; };
+		04A3DBA22AF231A300C11F86 /* CastV2PlatformReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DBA12AF231A300C11F86 /* CastV2PlatformReader.swift */; };
+		04A3DBAC2AF231B400C11F86 /* CastMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DBA32AF231AB00C11F86 /* CastMedia.swift */; };
+		04A3DBAD2AF231B400C11F86 /* CastMultizoneStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DBA42AF231AD00C11F86 /* CastMultizoneStatus.swift */; };
+		04A3DBAE2AF231B400C11F86 /* CastApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DBA52AF231AE00C11F86 /* CastApp.swift */; };
+		04A3DBAF2AF231B400C11F86 /* CastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DBA62AF231AF00C11F86 /* CastMessage.swift */; };
+		04A3DBB02AF231B400C11F86 /* CastDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DBA72AF231B000C11F86 /* CastDevice.swift */; };
+		04A3DBB12AF231B400C11F86 /* CastMultizoneDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DBA82AF231B100C11F86 /* CastMultizoneDevice.swift */; };
+		04A3DBB22AF231B400C11F86 /* CastStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DBA92AF231B300C11F86 /* CastStatus.swift */; };
+		04A3DBB32AF231B400C11F86 /* CastMediaStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DBAA2AF231B300C11F86 /* CastMediaStatus.swift */; };
+		04A3DBB42AF231B400C11F86 /* AppAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DBAB2AF231B400C11F86 /* AppAvailability.swift */; };
+		04A3DBB72AF2325700C11F86 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 04A3DBB62AF2325700C11F86 /* SwiftyJSON */; };
+		04A3DBBA2AF232FE00C11F86 /* CASTV2Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DBB92AF232FE00C11F86 /* CASTV2Protocol.swift */; };
+		04A3DBBD2AF2336700C11F86 /* Result in Frameworks */ = {isa = PBXBuildFile; productRef = 04A3DBBC2AF2336700C11F86 /* Result */; };
+		04A3DBC02AF233F800C11F86 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 04A3DBBF2AF233F800C11F86 /* SwiftProtobuf */; };
+		04A3DBC22AF233F800C11F86 /* SwiftProtobufPluginLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 04A3DBC12AF233F800C11F86 /* SwiftProtobufPluginLibrary */; };
+		04A3DBC42AF233F800C11F86 /* protoc-gen-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 04A3DBC32AF233F800C11F86 /* protoc-gen-swift */; };
+		04A3DBC72AF234D900C11F86 /* cast_channel.proto in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DBC52AF234D800C11F86 /* cast_channel.proto */; };
+		04A3DBC82AF234D900C11F86 /* cast_channel.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DBC62AF234D900C11F86 /* cast_channel.pb.swift */; };
+		04A3DBCA2AF2356600C11F86 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DBC92AF2356600C11F86 /* DetailsViewController.swift */; };
+		04A3DBCC2AF2356E00C11F86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A3DBCB2AF2356E00C11F86 /* Main.storyboard */; };
+		04A3DBCE2AF2359800C11F86 /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DBCD2AF2359800C11F86 /* DeviceCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04A3DB642AF22F8000C11F86 /* OpenCastCustom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCastCustom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A3DB672AF22F8000C11F86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04A3DB692AF22F8000C11F86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04A3DB6B2AF22F8000C11F86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04A3DB702AF22F8200C11F86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04A3DB732AF22F8200C11F86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04A3DB752AF22F8200C11F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A3DB7F2AF230DD00C11F86 /* BoardCaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCaseController.swift; sourceTree = "<group>"; };
+		04A3DB872AF2318A00C11F86 /* DeviceSetupChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceSetupChannel.swift; sourceTree = "<group>"; };
+		04A3DB882AF2318C00C11F86 /* Channelable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channelable.swift; sourceTree = "<group>"; };
+		04A3DB892AF2318E00C11F86 /* DeviceDiscoveryChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceDiscoveryChannel.swift; sourceTree = "<group>"; };
+		04A3DB8A2AF2318F00C11F86 /* DeviceAuthChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceAuthChannel.swift; sourceTree = "<group>"; };
+		04A3DB8B2AF2319000C11F86 /* DeviceConnectionChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceConnectionChannel.swift; sourceTree = "<group>"; };
+		04A3DB8C2AF2319200C11F86 /* MultizoneControlChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultizoneControlChannel.swift; sourceTree = "<group>"; };
+		04A3DB8D2AF2319300C11F86 /* HeartbeatChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartbeatChannel.swift; sourceTree = "<group>"; };
+		04A3DB8E2AF2319400C11F86 /* RequestSink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestSink.swift; sourceTree = "<group>"; };
+		04A3DB8F2AF2319500C11F86 /* ReceiverControlChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiverControlChannel.swift; sourceTree = "<group>"; };
+		04A3DB902AF2319700C11F86 /* CastChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastChannel.swift; sourceTree = "<group>"; };
+		04A3DB912AF2319800C11F86 /* MediaControlChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaControlChannel.swift; sourceTree = "<group>"; };
+		04A3DB9D2AF2319C00C11F86 /* CastDeviceScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastDeviceScanner.swift; sourceTree = "<group>"; };
+		04A3DB9E2AF2319E00C11F86 /* CastClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastClient.swift; sourceTree = "<group>"; };
+		04A3DBA12AF231A300C11F86 /* CastV2PlatformReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastV2PlatformReader.swift; sourceTree = "<group>"; };
+		04A3DBA32AF231AB00C11F86 /* CastMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastMedia.swift; sourceTree = "<group>"; };
+		04A3DBA42AF231AD00C11F86 /* CastMultizoneStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastMultizoneStatus.swift; sourceTree = "<group>"; };
+		04A3DBA52AF231AE00C11F86 /* CastApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastApp.swift; sourceTree = "<group>"; };
+		04A3DBA62AF231AF00C11F86 /* CastMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastMessage.swift; sourceTree = "<group>"; };
+		04A3DBA72AF231B000C11F86 /* CastDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastDevice.swift; sourceTree = "<group>"; };
+		04A3DBA82AF231B100C11F86 /* CastMultizoneDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastMultizoneDevice.swift; sourceTree = "<group>"; };
+		04A3DBA92AF231B300C11F86 /* CastStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastStatus.swift; sourceTree = "<group>"; };
+		04A3DBAA2AF231B300C11F86 /* CastMediaStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastMediaStatus.swift; sourceTree = "<group>"; };
+		04A3DBAB2AF231B400C11F86 /* AppAvailability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAvailability.swift; sourceTree = "<group>"; };
+		04A3DBB92AF232FE00C11F86 /* CASTV2Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CASTV2Protocol.swift; sourceTree = "<group>"; };
+		04A3DBC52AF234D800C11F86 /* cast_channel.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = cast_channel.proto; sourceTree = "<group>"; };
+		04A3DBC62AF234D900C11F86 /* cast_channel.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cast_channel.pb.swift; sourceTree = "<group>"; };
+		04A3DBC92AF2356600C11F86 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		04A3DBCB2AF2356E00C11F86 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		04A3DBCD2AF2359800C11F86 /* DeviceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04A3DB612AF22F8000C11F86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A3DBC42AF233F800C11F86 /* protoc-gen-swift in Frameworks */,
+				04A3DBC22AF233F800C11F86 /* SwiftProtobufPluginLibrary in Frameworks */,
+				04A3DBB72AF2325700C11F86 /* SwiftyJSON in Frameworks */,
+				04A3DBBD2AF2336700C11F86 /* Result in Frameworks */,
+				04A3DBC02AF233F800C11F86 /* SwiftProtobuf in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04A3DB5B2AF22F8000C11F86 = {
+			isa = PBXGroup;
+			children = (
+				04A3DB662AF22F8000C11F86 /* OpenCastCustom */,
+				04A3DB652AF22F8000C11F86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04A3DB652AF22F8000C11F86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04A3DB642AF22F8000C11F86 /* OpenCastCustom.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04A3DB662AF22F8000C11F86 /* OpenCastCustom */ = {
+			isa = PBXGroup;
+			children = (
+				04A3DB832AF2314C00C11F86 /* Helpers */,
+				04A3DB672AF22F8000C11F86 /* AppDelegate.swift */,
+				04A3DB692AF22F8000C11F86 /* SceneDelegate.swift */,
+				04A3DB6B2AF22F8000C11F86 /* ViewController.swift */,
+				04A3DB7F2AF230DD00C11F86 /* BoardCaseController.swift */,
+				04A3DBCD2AF2359800C11F86 /* DeviceCell.swift */,
+				04A3DBC92AF2356600C11F86 /* DetailsViewController.swift */,
+				04A3DB702AF22F8200C11F86 /* Assets.xcassets */,
+				04A3DBCB2AF2356E00C11F86 /* Main.storyboard */,
+				04A3DB722AF22F8200C11F86 /* LaunchScreen.storyboard */,
+				04A3DB752AF22F8200C11F86 /* Info.plist */,
+			);
+			path = OpenCastCustom;
+			sourceTree = "<group>";
+		};
+		04A3DB812AF2313C00C11F86 /* Proto */ = {
+			isa = PBXGroup;
+			children = (
+				04A3DBC62AF234D900C11F86 /* cast_channel.pb.swift */,
+				04A3DBC52AF234D800C11F86 /* cast_channel.proto */,
+				04A3DBA12AF231A300C11F86 /* CastV2PlatformReader.swift */,
+			);
+			path = Proto;
+			sourceTree = "<group>";
+		};
+		04A3DB832AF2314C00C11F86 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				04A3DBB82AF232F500C11F86 /* Definations */,
+				04A3DB862AF2315F00C11F86 /* Networking */,
+				04A3DB852AF2315900C11F86 /* Chanels */,
+				04A3DB842AF2315400C11F86 /* Models */,
+				04A3DB812AF2313C00C11F86 /* Proto */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		04A3DB842AF2315400C11F86 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04A3DBAB2AF231B400C11F86 /* AppAvailability.swift */,
+				04A3DBA52AF231AE00C11F86 /* CastApp.swift */,
+				04A3DBA72AF231B000C11F86 /* CastDevice.swift */,
+				04A3DBA32AF231AB00C11F86 /* CastMedia.swift */,
+				04A3DBAA2AF231B300C11F86 /* CastMediaStatus.swift */,
+				04A3DBA62AF231AF00C11F86 /* CastMessage.swift */,
+				04A3DBA82AF231B100C11F86 /* CastMultizoneDevice.swift */,
+				04A3DBA42AF231AD00C11F86 /* CastMultizoneStatus.swift */,
+				04A3DBA92AF231B300C11F86 /* CastStatus.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04A3DB852AF2315900C11F86 /* Chanels */ = {
+			isa = PBXGroup;
+			children = (
+				04A3DB902AF2319700C11F86 /* CastChannel.swift */,
+				04A3DB882AF2318C00C11F86 /* Channelable.swift */,
+				04A3DB8A2AF2318F00C11F86 /* DeviceAuthChannel.swift */,
+				04A3DB8B2AF2319000C11F86 /* DeviceConnectionChannel.swift */,
+				04A3DB892AF2318E00C11F86 /* DeviceDiscoveryChannel.swift */,
+				04A3DB872AF2318A00C11F86 /* DeviceSetupChannel.swift */,
+				04A3DB8D2AF2319300C11F86 /* HeartbeatChannel.swift */,
+				04A3DB912AF2319800C11F86 /* MediaControlChannel.swift */,
+				04A3DB8C2AF2319200C11F86 /* MultizoneControlChannel.swift */,
+				04A3DB8F2AF2319500C11F86 /* ReceiverControlChannel.swift */,
+				04A3DB8E2AF2319400C11F86 /* RequestSink.swift */,
+			);
+			path = Chanels;
+			sourceTree = "<group>";
+		};
+		04A3DB862AF2315F00C11F86 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				04A3DB9E2AF2319E00C11F86 /* CastClient.swift */,
+				04A3DB9D2AF2319C00C11F86 /* CastDeviceScanner.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		04A3DBB82AF232F500C11F86 /* Definations */ = {
+			isa = PBXGroup;
+			children = (
+				04A3DBB92AF232FE00C11F86 /* CASTV2Protocol.swift */,
+			);
+			path = Definations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04A3DB632AF22F8000C11F86 /* OpenCastCustom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04A3DB782AF22F8200C11F86 /* Build configuration list for PBXNativeTarget "OpenCastCustom" */;
+			buildPhases = (
+				04A3DB602AF22F8000C11F86 /* Sources */,
+				04A3DB612AF22F8000C11F86 /* Frameworks */,
+				04A3DB622AF22F8000C11F86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenCastCustom;
+			packageProductDependencies = (
+				04A3DBB62AF2325700C11F86 /* SwiftyJSON */,
+				04A3DBBC2AF2336700C11F86 /* Result */,
+				04A3DBBF2AF233F800C11F86 /* SwiftProtobuf */,
+				04A3DBC12AF233F800C11F86 /* SwiftProtobufPluginLibrary */,
+				04A3DBC32AF233F800C11F86 /* protoc-gen-swift */,
+			);
+			productName = OpenCastCustom;
+			productReference = 04A3DB642AF22F8000C11F86 /* OpenCastCustom.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04A3DB5C2AF22F8000C11F86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					04A3DB632AF22F8000C11F86 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 04A3DB5F2AF22F8000C11F86 /* Build configuration list for PBXProject "OpenCastCustom" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04A3DB5B2AF22F8000C11F86;
+			packageReferences = (
+				04A3DBB52AF2325700C11F86 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				04A3DBBB2AF2336700C11F86 /* XCRemoteSwiftPackageReference "Result" */,
+				04A3DBBE2AF233F800C11F86 /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+			);
+			productRefGroup = 04A3DB652AF22F8000C11F86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04A3DB632AF22F8000C11F86 /* OpenCastCustom */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04A3DB622AF22F8000C11F86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A3DBCC2AF2356E00C11F86 /* Main.storyboard in Resources */,
+				04A3DB742AF22F8200C11F86 /* LaunchScreen.storyboard in Resources */,
+				04A3DB712AF22F8200C11F86 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04A3DB602AF22F8000C11F86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A3DB9C2AF2319800C11F86 /* MediaControlChannel.swift in Sources */,
+				04A3DBAE2AF231B400C11F86 /* CastApp.swift in Sources */,
+				04A3DB922AF2319800C11F86 /* DeviceSetupChannel.swift in Sources */,
+				04A3DBB32AF231B400C11F86 /* CastMediaStatus.swift in Sources */,
+				04A3DBBA2AF232FE00C11F86 /* CASTV2Protocol.swift in Sources */,
+				04A3DB972AF2319800C11F86 /* MultizoneControlChannel.swift in Sources */,
+				04A3DB9B2AF2319800C11F86 /* CastChannel.swift in Sources */,
+				04A3DB942AF2319800C11F86 /* DeviceDiscoveryChannel.swift in Sources */,
+				04A3DBB12AF231B400C11F86 /* CastMultizoneDevice.swift in Sources */,
+				04A3DB932AF2319800C11F86 /* Channelable.swift in Sources */,
+				04A3DBB42AF231B400C11F86 /* AppAvailability.swift in Sources */,
+				04A3DB802AF230DD00C11F86 /* BoardCaseController.swift in Sources */,
+				04A3DB9F2AF2319E00C11F86 /* CastDeviceScanner.swift in Sources */,
+				04A3DBA22AF231A300C11F86 /* CastV2PlatformReader.swift in Sources */,
+				04A3DBAF2AF231B400C11F86 /* CastMessage.swift in Sources */,
+				04A3DB6C2AF22F8000C11F86 /* ViewController.swift in Sources */,
+				04A3DBAD2AF231B400C11F86 /* CastMultizoneStatus.swift in Sources */,
+				04A3DBC72AF234D900C11F86 /* cast_channel.proto in Sources */,
+				04A3DBB02AF231B400C11F86 /* CastDevice.swift in Sources */,
+				04A3DB952AF2319800C11F86 /* DeviceAuthChannel.swift in Sources */,
+				04A3DB962AF2319800C11F86 /* DeviceConnectionChannel.swift in Sources */,
+				04A3DBA02AF2319E00C11F86 /* CastClient.swift in Sources */,
+				04A3DBCA2AF2356600C11F86 /* DetailsViewController.swift in Sources */,
+				04A3DB9A2AF2319800C11F86 /* ReceiverControlChannel.swift in Sources */,
+				04A3DBB22AF231B400C11F86 /* CastStatus.swift in Sources */,
+				04A3DB982AF2319800C11F86 /* HeartbeatChannel.swift in Sources */,
+				04A3DB682AF22F8000C11F86 /* AppDelegate.swift in Sources */,
+				04A3DBCE2AF2359800C11F86 /* DeviceCell.swift in Sources */,
+				04A3DB992AF2319800C11F86 /* RequestSink.swift in Sources */,
+				04A3DB6A2AF22F8000C11F86 /* SceneDelegate.swift in Sources */,
+				04A3DBAC2AF231B400C11F86 /* CastMedia.swift in Sources */,
+				04A3DBC82AF234D900C11F86 /* cast_channel.pb.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04A3DB722AF22F8200C11F86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04A3DB732AF22F8200C11F86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04A3DB762AF22F8200C11F86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04A3DB772AF22F8200C11F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04A3DB792AF22F8200C11F86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AL5596JXF3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenCastCustom/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = demo.OpenCastCustom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04A3DB7A2AF22F8200C11F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AL5596JXF3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenCastCustom/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = demo.OpenCastCustom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04A3DB5F2AF22F8000C11F86 /* Build configuration list for PBXProject "OpenCastCustom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A3DB762AF22F8200C11F86 /* Debug */,
+				04A3DB772AF22F8200C11F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04A3DB782AF22F8200C11F86 /* Build configuration list for PBXNativeTarget "OpenCastCustom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A3DB792AF22F8200C11F86 /* Debug */,
+				04A3DB7A2AF22F8200C11F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04A3DBB52AF2325700C11F86 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		04A3DBBB2AF2336700C11F86 /* XCRemoteSwiftPackageReference "Result" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/antitypical/Result.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		04A3DBBE2AF233F800C11F86 /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.25.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04A3DBB62AF2325700C11F86 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04A3DBB52AF2325700C11F86 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		04A3DBBC2AF2336700C11F86 /* Result */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04A3DBBB2AF2336700C11F86 /* XCRemoteSwiftPackageReference "Result" */;
+			productName = Result;
+		};
+		04A3DBBF2AF233F800C11F86 /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04A3DBBE2AF233F800C11F86 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
+		04A3DBC12AF233F800C11F86 /* SwiftProtobufPluginLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04A3DBBE2AF233F800C11F86 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobufPluginLibrary;
+		};
+		04A3DBC32AF233F800C11F86 /* protoc-gen-swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04A3DBBE2AF233F800C11F86 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = "protoc-gen-swift";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 04A3DB5C2AF22F8000C11F86 /* Project object */;
+}
